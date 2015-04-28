@@ -1,0 +1,43 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:1.0.0'
+	}
+}
+
+apply plugin: 'com.android.library'
+
+android {
+	compileSdkVersion 21
+	buildToolsVersion "21.1.1"
+	
+	sourceSets {
+		main {
+			manifest {
+				srcFile 'AndroidManifest.xml'
+			}
+			java {
+				srcDir 'src'
+			}
+			res {
+				srcDir 'res'
+			}
+			assets {
+				srcDir 'assets'
+			}
+			resources {
+				srcDir 'src'
+			}
+			aidl {
+				srcDir 'src'
+			}
+		}
+	}
+
+        lintOptions {
+            abortOnError false
+        }
+
+}
