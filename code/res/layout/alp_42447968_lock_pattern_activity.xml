@@ -19,6 +19,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:background="@android:color/white"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
     <TextView
         android:id="@+id/alp_42447968_textview_info"
         android:layout_width="wrap_content"
